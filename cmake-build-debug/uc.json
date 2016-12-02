@@ -1,0 +1,142 @@
+[
+  {
+    "name": "California Maritime Academy",
+    "value": "CSUMA"
+  },
+  {
+    "name": "California Polytechnic University, Pomona",
+    "value": "CPP"
+  },
+  {
+    "name": "California Polytechnic University, San Luis Obispo",
+    "value": "CPSLO"
+  },
+  {
+    "name": "California State University, Bakersfield",
+    "value": "CSUB"
+  },
+  {
+    "name": "California State University, Channel Islands",
+    "value": "CSUCI"
+  },
+  {
+    "name": "California State University, Chico",
+    "value": "CSUC"
+  },
+  {
+    "name": "California State University, Dominguez Hills",
+    "value": "CSUDH"
+  },
+  {
+    "name": "California State University, East Bay",
+    "value": "CSUEB"
+  },
+  {
+    "name": "California State University, Fresno",
+    "value": "CSUFRES"
+  },
+  {
+    "name": "California State University, Fullerton",
+    "value": "CSUFULL"
+  },
+  {
+    "name": "California State University, Long Beach",
+    "value": "CSULB"
+  },
+  {
+    "name": "California State University, Los Angeles",
+    "value": "CSULA"
+  },
+  {
+    "name": "California State University, Monterey Bay",
+    "value": "CSUMB"
+  },
+  {
+    "name": "California State University, Northridge",
+    "value": "CSUN"
+  },
+  {
+    "name": "California State University, Sacramento",
+    "value": "CSUS"
+  },
+  {
+    "name": "California State University, San Bernardino",
+    "value": "CSUSB"
+  },
+  {
+    "name": "California State University, San Marcos",
+    "value": "CSUSM"
+  },
+  {
+    "name": "California State University, Stanislaus",
+    "value": "CSUSTAN"
+  },
+  {
+    "name": "Humboldt State University",
+    "value": "HSU"
+  },
+  {
+    "name": "San Diego State University",
+    "value": "SDSU"
+  },
+  {
+    "name": "San Francisco State University",
+    "value": "SFSU"
+  },
+  {
+    "name": "San Jose State University",
+    "value": "SJSU"
+  },
+  {
+    "name": "Sonoma State University",
+    "value": "SSU"
+  },
+  {
+    "name": "UC Davis School of Veterinary Medicine",
+    "value": "UCDSVM"
+  },
+  {
+    "name": "UCSF School of Dentistry",
+    "value": "UCSFD"
+  },
+  {
+    "name": "UCSF School of Pharmacy",
+    "value": "UCSFP"
+  },
+  {
+    "name": "University of California, Berkeley",
+    "value": "UCB"
+  },
+  {
+    "name": "University of California, Davis",
+    "value": "UCD"
+  },
+  {
+    "name": "University of California, Irvine",
+    "value": "UCI"
+  },
+  {
+    "name": "University of California, Los Angeles",
+    "value": "UCLA"
+  },
+  {
+    "name": "University of California, Merced",
+    "value": "UCM"
+  },
+  {
+    "name": "University of California, Riverside",
+    "value": "UCR"
+  },
+  {
+    "name": "University of California, San Diego",
+    "value": "UCSD"
+  },
+  {
+    "name": "University of California, Santa Barbara",
+    "value": "UCSB"
+  },
+  {
+    "name": "University of California, Santa Cruz",
+    "value": "UCSC"
+  }
+]

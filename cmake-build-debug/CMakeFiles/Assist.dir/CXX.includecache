@@ -15,6 +15,8 @@ rapidjson/stringbuffer.h
 /Users/doyonghoon/Development/CIS22C/Assist/rapidjson/stringbuffer.h
 iostream
 -
+fstream
+-
 
 /Users/doyonghoon/Development/CIS22C/Assist/rapidjson/allocators.h
 rapidjson.h
