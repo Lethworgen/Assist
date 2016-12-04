@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug
 CMakeFiles/Assist.dir/all:
 	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/depend
 	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Assist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Assist"
 .PHONY : CMakeFiles/Assist.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/Assist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Assist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Assist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Assist.dir/rule

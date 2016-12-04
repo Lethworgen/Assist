@@ -1,0 +1,25 @@
+[
+  {
+    "name": "University of California, Berkeley",
+    "name_code": "ucb",
+    "majors": [
+      {
+        "name": "History",
+        "courses": [
+          "HIST 17A",
+          "HIST 17B",
+          "HIST 17C",
+          "HIST 6A",
+          "HIST 6B",
+          "HIST 6C",
+          "HIST 19A",
+          "HIST 19B",
+          "HIST 7A",
+          "HIST 7B",
+          "HIST 16A",
+          "HIST 16B"
+        ]
+      }
+    ]
+  }
+]

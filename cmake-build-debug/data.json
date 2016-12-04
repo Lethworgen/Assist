@@ -1,0 +1,165 @@
+{
+  "data": {
+    "universities": [
+      {
+        "name": "University of California, Berkeley",
+        "name_code": "ucb",
+        "majors": [
+          {
+            "name": "History",
+            "courses": [
+              "HIST 17A",
+              "HIST 17B",
+              "HIST 17C",
+              "HIST 6A",
+              "HIST 6B",
+              "HIST 6C",
+              "HIST 19A",
+              "HIST 19B",
+              "HIST 7A",
+              "HIST 7B",
+              "HIST 16A",
+              "HIST 16B"
+            ]
+          },
+          {
+            "name": "EECS",
+            "courses": [
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2A",
+              "MATH 2B",
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "PHYS 4D",
+              "EWRT 1A",
+              "EWRT 2",
+              "BIOL 6A",
+              "BIOL 6B",
+              "BIOL 6C",
+              "CHEM 1A",
+              "CHEM 1B",
+              "CHEM 1C",
+              "CHEM 12A",
+              "CHEM 12B",
+              "CHEM 12C",
+              "BIOL 40A",
+              "BIOL 40B",
+              "BIOL 40C",
+              "CIS 22C"
+            ]
+          },
+          {
+            "name": "Mathematics",
+            "courses": [
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2A",
+              "MATH 2B",
+              "MATH 22"
+            ]
+          },
+          {
+            "name": "Mechanical Engineering",
+            "courses": [
+              "CHEM 1A",
+              "CHEM 1B",
+              "CHEM 1C",
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2A",
+              "MATH 2B",
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "PHYS 4D",
+              "EWRT 1A",
+              "EWRT 2",
+              "BIOL 6A",
+              "BIOL 6C",
+              "CHEM 12A",
+              "CHEM 12B",
+              "CHEM 12C",
+              "BIOL 40A",
+              "BIOL 40B",
+              "BIOL 40C"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "University of California, San Diego",
+        "name_code": "ucsd",
+        "majors": [
+          {
+            "name": "Mechanical Engineering",
+            "courses": [
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2A",
+              "MATH 2B",
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "CHEM 1A",
+              "CHEM 1B"
+            ]
+          },
+          {
+            "name": "Mathematics",
+            "courses": [
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2A",
+              "MATH 2B",
+              "CIS 35A"
+            ]
+          },
+          {
+            "name": "Physics",
+            "courses": [
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "PHYS 4D",
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2A",
+              "MATH 2B",
+              "CHEM 1A"
+            ]
+          },
+          {
+            "name": "Environmental ENgineering",
+            "courses": [
+              "MATH 1A",
+              "MATH 1B",
+              "MATH 1C",
+              "MATH 1D",
+              "MATH 2B",
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "CHEM 1A",
+              "CHEM 1B",
+              "CHEM 1C"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

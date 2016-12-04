@@ -81,17 +81,95 @@ CMakeFiles/Assist.dir/main.cpp.o.provides: CMakeFiles/Assist.dir/main.cpp.o.requ
 CMakeFiles/Assist.dir/main.cpp.o.provides.build: CMakeFiles/Assist.dir/main.cpp.o
 
 
+CMakeFiles/Assist.dir/model/University.cpp.o: CMakeFiles/Assist.dir/flags.make
+CMakeFiles/Assist.dir/model/University.cpp.o: ../model/University.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assist.dir/model/University.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assist.dir/model/University.cpp.o -c /Users/doyonghoon/Development/CIS22C/Assist/model/University.cpp
+
+CMakeFiles/Assist.dir/model/University.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assist.dir/model/University.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/doyonghoon/Development/CIS22C/Assist/model/University.cpp > CMakeFiles/Assist.dir/model/University.cpp.i
+
+CMakeFiles/Assist.dir/model/University.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assist.dir/model/University.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/doyonghoon/Development/CIS22C/Assist/model/University.cpp -o CMakeFiles/Assist.dir/model/University.cpp.s
+
+CMakeFiles/Assist.dir/model/University.cpp.o.requires:
+
+.PHONY : CMakeFiles/Assist.dir/model/University.cpp.o.requires
+
+CMakeFiles/Assist.dir/model/University.cpp.o.provides: CMakeFiles/Assist.dir/model/University.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/University.cpp.o.provides.build
+.PHONY : CMakeFiles/Assist.dir/model/University.cpp.o.provides
+
+CMakeFiles/Assist.dir/model/University.cpp.o.provides.build: CMakeFiles/Assist.dir/model/University.cpp.o
+
+
+CMakeFiles/Assist.dir/model/Major.cpp.o: CMakeFiles/Assist.dir/flags.make
+CMakeFiles/Assist.dir/model/Major.cpp.o: ../model/Major.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assist.dir/model/Major.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assist.dir/model/Major.cpp.o -c /Users/doyonghoon/Development/CIS22C/Assist/model/Major.cpp
+
+CMakeFiles/Assist.dir/model/Major.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assist.dir/model/Major.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/doyonghoon/Development/CIS22C/Assist/model/Major.cpp > CMakeFiles/Assist.dir/model/Major.cpp.i
+
+CMakeFiles/Assist.dir/model/Major.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assist.dir/model/Major.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/doyonghoon/Development/CIS22C/Assist/model/Major.cpp -o CMakeFiles/Assist.dir/model/Major.cpp.s
+
+CMakeFiles/Assist.dir/model/Major.cpp.o.requires:
+
+.PHONY : CMakeFiles/Assist.dir/model/Major.cpp.o.requires
+
+CMakeFiles/Assist.dir/model/Major.cpp.o.provides: CMakeFiles/Assist.dir/model/Major.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Major.cpp.o.provides.build
+.PHONY : CMakeFiles/Assist.dir/model/Major.cpp.o.provides
+
+CMakeFiles/Assist.dir/model/Major.cpp.o.provides.build: CMakeFiles/Assist.dir/model/Major.cpp.o
+
+
+CMakeFiles/Assist.dir/model/Course.cpp.o: CMakeFiles/Assist.dir/flags.make
+CMakeFiles/Assist.dir/model/Course.cpp.o: ../model/Course.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Assist.dir/model/Course.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assist.dir/model/Course.cpp.o -c /Users/doyonghoon/Development/CIS22C/Assist/model/Course.cpp
+
+CMakeFiles/Assist.dir/model/Course.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assist.dir/model/Course.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/doyonghoon/Development/CIS22C/Assist/model/Course.cpp > CMakeFiles/Assist.dir/model/Course.cpp.i
+
+CMakeFiles/Assist.dir/model/Course.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assist.dir/model/Course.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/doyonghoon/Development/CIS22C/Assist/model/Course.cpp -o CMakeFiles/Assist.dir/model/Course.cpp.s
+
+CMakeFiles/Assist.dir/model/Course.cpp.o.requires:
+
+.PHONY : CMakeFiles/Assist.dir/model/Course.cpp.o.requires
+
+CMakeFiles/Assist.dir/model/Course.cpp.o.provides: CMakeFiles/Assist.dir/model/Course.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Course.cpp.o.provides.build
+.PHONY : CMakeFiles/Assist.dir/model/Course.cpp.o.provides
+
+CMakeFiles/Assist.dir/model/Course.cpp.o.provides.build: CMakeFiles/Assist.dir/model/Course.cpp.o
+
+
 # Object files for target Assist
 Assist_OBJECTS = \
-"CMakeFiles/Assist.dir/main.cpp.o"
+"CMakeFiles/Assist.dir/main.cpp.o" \
+"CMakeFiles/Assist.dir/model/University.cpp.o" \
+"CMakeFiles/Assist.dir/model/Major.cpp.o" \
+"CMakeFiles/Assist.dir/model/Course.cpp.o"
 
 # External object files for target Assist
 Assist_EXTERNAL_OBJECTS =
 
 Assist: CMakeFiles/Assist.dir/main.cpp.o
+Assist: CMakeFiles/Assist.dir/model/University.cpp.o
+Assist: CMakeFiles/Assist.dir/model/Major.cpp.o
+Assist: CMakeFiles/Assist.dir/model/Course.cpp.o
 Assist: CMakeFiles/Assist.dir/build.make
 Assist: CMakeFiles/Assist.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Assist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/doyonghoon/Development/CIS22C/Assist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Assist"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assist.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +178,9 @@ CMakeFiles/Assist.dir/build: Assist
 .PHONY : CMakeFiles/Assist.dir/build
 
 CMakeFiles/Assist.dir/requires: CMakeFiles/Assist.dir/main.cpp.o.requires
+CMakeFiles/Assist.dir/requires: CMakeFiles/Assist.dir/model/University.cpp.o.requires
+CMakeFiles/Assist.dir/requires: CMakeFiles/Assist.dir/model/Major.cpp.o.requires
+CMakeFiles/Assist.dir/requires: CMakeFiles/Assist.dir/model/Course.cpp.o.requires
 
 .PHONY : CMakeFiles/Assist.dir/requires
 
