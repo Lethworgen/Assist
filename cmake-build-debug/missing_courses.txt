@@ -1,12 +1,10 @@
 ===================
-History
+Physics
 ===================
-HIST 16A
-HIST 16B
-HIST 19A
-HIST 19B
-HIST 6A
-HIST 6B
-HIST 6C
-HIST 7A
-HIST 7B
+PHYS 4A
+PHYS 4B
+PHYS 4C
+PHYS 4D
+CHEM 1A
+MATH 2A
+MATH 2B
