@@ -86,6 +86,21 @@
 		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BST.h">
 			<Option target="Assist"/>
 		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BSTNode.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashMap.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashNode.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/KeyHash.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Node.h">
+			<Option target="Assist"/>
+		</Unit>
 		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Queue.h">
 			<Option target="Assist"/>
 		</Unit>

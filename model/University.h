@@ -16,25 +16,46 @@ class University {
 private:
     string name;
     string code;
-    SinglyLinkedList<Major *> *majors;
+
+    SinglyLinkedList<Major> *majors;
+
+    unsigned long generateHashCode(string text);
+
+    unsigned long hashcode;
+
 public:
+
     University();
 
-    University(string name, string code, SinglyLinkedList<Major *> *majors);
+    University(string name, string code, SinglyLinkedList<Major> *majors);
 
-    string getName();
+    string getName() const;
 
     string getNameCode();
+
+    unsigned long getHashCode() const;
 
     void setName(string name);
 
     void setCode(string code);
 
-    void setMajors(SinglyLinkedList<Major *> *majors);
+    void setMajors(SinglyLinkedList<Major> *majors);
 
-    SinglyLinkedList<Major *> *getMajors();
+    SinglyLinkedList<Major> *getMajors();
 
     ~University();
+
+    friend ostream &operator<<(ostream &os, const University *u);
+
+    friend ostream &operator<<(ostream &os, const University &u);
+
+    bool operator<(const University &b);
+
+    bool operator>(const University &b);
+
+    bool operator==(const University &b);
+
+    bool operator!=(const University &b);
 };
 
 

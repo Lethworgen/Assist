@@ -18,28 +18,26 @@ class Parser {
 private:
     SinglyLinkedList<Course *> *instantiatedCourses;
 
-    int generateHashCode(string text);
-
     const char *parseJsonFile(string path);
 
     Course *generateCourse(string name);
 
 public:
+    int generateHashCode(string text);
+
     Parser();
 
     ~Parser();
 
-    SinglyLinkedList<University *> *getUniversities(string path);
+    SinglyLinkedList<University> *getUniversities(string path);
 };
 
-SinglyLinkedList<University *> *Parser::getUniversities(string path) {
-    SinglyLinkedList<University *> *result = new SinglyLinkedList<University *>();
+SinglyLinkedList<University> *Parser::getUniversities(string path) {
+    SinglyLinkedList<University> *result = new SinglyLinkedList<University>();
     Document d;
     d.Parse(parseJsonFile(path));
     Value &data = d["data"];
     Value::Array universities = d["data"]["universities"].GetArray();
-//    cout << "isArray: " << d.IsArray() << endl;
-//    Value::Array universities = d.GetArray();
     for (int i = 0; i < universities.Capacity(); i++) {
         // visiting university object.
         University *u = new University();
@@ -48,7 +46,7 @@ SinglyLinkedList<University *> *Parser::getUniversities(string path) {
         string nameCode = univ["name_code"].GetString();
         Value::Array majors = univ["majors"].GetArray();
 
-        SinglyLinkedList<Major *> *tmpMajors = new SinglyLinkedList<Major *>();
+        SinglyLinkedList<Major> *tmpMajors = new SinglyLinkedList<Major>();
         for (int j = 0; j < majors.Capacity(); j++) {
             // visiting major object.
             Major *m = new Major();
@@ -56,24 +54,24 @@ SinglyLinkedList<University *> *Parser::getUniversities(string path) {
             string majorName = major["name"].GetString();
             Value::Array courses = major["courses"].GetArray();
 
-            SinglyLinkedList<Course *> *tmpCourses = new SinglyLinkedList<Course *>();
+            BST<Course> *tmpCourses = new BST<Course>();
             for (int k = 0; k < courses.Capacity(); k++) {
                 // visiting course string.
                 string coursename = courses[k].GetString();
                 Course *course = generateCourse(coursename);
-                tmpCourses->addLast(course);
+                tmpCourses->insert(*course);
             }
 
             m->setName(majorName);
             m->setCourses(tmpCourses);
-            tmpMajors->addLast(m);
+            tmpMajors->addLast(*m);
         }
 
         u->setName(name);
         u->setCode(nameCode);
         u->setMajors(tmpMajors);
 
-        result->addLast(u);
+        result->addLast(*u);
     }
     return result;
 }

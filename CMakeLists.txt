@@ -16,6 +16,11 @@ set(
         data_structure/SinglyLinkedList.h
         data_structure/Queue.h
         data_structure/BST.h
+        data_structure/BSTNode.h
+        data_structure/Node.h
+        data_structure/HashMap.h
+        data_structure/HashNode.h
+        data_structure/KeyHash.h
 
         model/University.h
         model/University.cpp
@@ -23,6 +28,7 @@ set(
         model/Major.cpp
         model/Course.h
         model/Course.cpp
-        model/HashObject.h)
+        model/HashObject.h
+)
 
 add_executable(Assist ${SOURCE_FILES})

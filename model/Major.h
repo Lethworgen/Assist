@@ -7,31 +7,45 @@
 
 #include <iostream>
 #include <string>
-#include "../data_structure/SinglyLinkedList.h"
 #include "Course.h"
+#include "../data_structure/BST.h"
 
 using namespace std;
 
 class Major {
 private:
     string name;
-    SinglyLinkedList<Course *> *courses;
+    int hashcode;
+    BST<Course> *courses;
+
+    int generateHashCode(string text);
+
 public:
     Major();
 
-    Major(string name, SinglyLinkedList<Course *> *courses);
+    Major(string name, BST<Course> *courses);
 
     string getName();
 
     void setName(string name);
 
-    void setCourses(SinglyLinkedList<Course *> *courses);
+    void setCourses(BST<Course> *courses);
 
-    SinglyLinkedList<Course *> *getCourses();
+    BST<Course> *getCourses();
 
     ~Major();
 
     void clear();
+
+    friend ostream &operator<<(ostream &os, const Major *b);
+
+    friend ostream &operator<<(ostream &os, const Major &b);
+
+    bool operator<(const Major &b);
+
+    bool operator>(const Major &b);
+
+    bool operator==(const Major &other);
 };
 
 

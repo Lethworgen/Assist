@@ -22,6 +22,8 @@ private:
 
     BSTNode<T> *findMax(BSTNode<T> *t);
 
+    BSTNode<T> *find(BSTNode<T> *t, T item);
+
 public:
     BST();
 
@@ -37,6 +39,7 @@ public:
 
     int getNumberOfItems();
 
+    bool search(T item);
 };
 
 template<class T>
@@ -164,6 +167,25 @@ BSTNode<T> *BST<T>::findMax(BSTNode<T> *t) {
 template<class T>
 int BST<T>::getNumberOfItems() {
     return count;
+}
+
+template<class T>
+bool BST<T>::search(T item) {
+    BSTNode<T> *tmp = root;
+    tmp = find(tmp, item);
+    return tmp != nullptr;
+}
+
+template<class T>
+BSTNode<T> *BST<T>::find(BSTNode<T> *t, T item) {
+    if (t == nullptr) {
+        return nullptr;
+    } else if (item < t->getData()) {
+        return find(t->getLeft(), item);
+    } else if (item > t->getData()) {
+        return find(t->getRight(), item);
+    }
+    return t;
 }
 
 

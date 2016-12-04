@@ -18,7 +18,37 @@ rapidjson/stringbuffer.h
 model/University.h
 /Users/doyonghoon/Development/CIS22C/Assist/model/University.h
 
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BST.h
+iostream
+-
+BSTNode.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BSTNode.h
+SinglyLinkedList.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/SinglyLinkedList.h
+Queue.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Queue.h
+
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BSTNode.h
+Node.h
 /Users/doyonghoon/Development/CIS22C/Assist/data_structure/Node.h
+
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashMap.h
+HashNode.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashNode.h
+KeyHash.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/KeyHash.h
+
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashNode.h
+
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/KeyHash.h
+iostream
+-
+
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Node.h
+
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Queue.h
+SinglyLinkedList.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/SinglyLinkedList.h
 
 /Users/doyonghoon/Development/CIS22C/Assist/data_structure/SinglyLinkedList.h
 iostream
@@ -31,6 +61,8 @@ iostream
 -
 Parser.h
 /Users/doyonghoon/Development/CIS22C/Assist/Parser.h
+data_structure/HashMap.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashMap.h
 
 /Users/doyonghoon/Development/CIS22C/Assist/model/Course.cpp
 Course.h
@@ -51,10 +83,10 @@ iostream
 -
 string
 -
-../data_structure/SinglyLinkedList.h
-/Users/doyonghoon/Development/CIS22C/Assist/data_structure/SinglyLinkedList.h
 Course.h
 /Users/doyonghoon/Development/CIS22C/Assist/model/Course.h
+../data_structure/BST.h
+/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BST.h
 
 /Users/doyonghoon/Development/CIS22C/Assist/model/University.cpp
 University.h

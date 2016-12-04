@@ -12,18 +12,38 @@ using namespace std;
 
 class Course {
 private:
-    string name;
+    string name = "";
     int hashcode;
 public:
+    Course();
+
     Course(string name, int hashcode);
 
+    Course(string name);
+
     ~Course();
+
+    int generateHashCode(string text);
 
     string getName();
 
     int getHashCode();
 
     bool operator==(const Course &other);
+
+    bool operator==(const Course *other);
+
+    friend ostream &operator<<(ostream &os, const Course *b);
+
+    friend ostream &operator<<(ostream &os, const Course &b);
+
+    bool operator<(const Course &b);
+
+    bool operator<(const Course *b);
+
+    bool operator>(const Course &b);
+
+    bool operator>(const Course *b);
 };
 
 
