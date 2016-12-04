@@ -16,6 +16,8 @@ private:
 
     void postorder(BSTNode<T> *t, Queue<T> *result);
 
+    void inorder(BSTNode<T> *t, Queue<T> *result);
+
     BSTNode<T> *remove(T item, BSTNode<T> *t);
 
     BSTNode<T> *findMin(BSTNode<T> *t);
@@ -34,6 +36,8 @@ public:
     void remove(T item);
 
     Queue<T> *postorder();
+
+    Queue<T> *inorder();
 
     Queue<T> *breadthfirst();
 
@@ -186,6 +190,23 @@ BSTNode<T> *BST<T>::find(BSTNode<T> *t, T item) {
         return find(t->getRight(), item);
     }
     return t;
+}
+
+template<class T>
+void BST<T>::inorder(BSTNode<T> *t, Queue<T> *result) {
+    if (t == nullptr) {
+        return;
+    }
+    inorder(t->getLeft(), result);
+    result->enqueue(t->getData());
+    inorder(t->getRight(), result);
+}
+
+template<class T>
+Queue<T> *BST<T>::inorder() {
+    Queue<T> *result = new Queue<T>();
+    inorder(root, result);
+    return result;
 }
 
 

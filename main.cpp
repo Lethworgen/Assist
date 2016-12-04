@@ -19,22 +19,10 @@ void putBestMatched(HashMap<University, BST<Major>> *map,
     map->put(key, majors);
 }
 
-int main() {
-    SinglyLinkedList<Course> *input = new SinglyLinkedList<Course>();
-    Course *tmpCourse1 = new Course("HIST 17B");
-    Course *tmpCourse2 = new Course("HIST 17A");
-    Course *tmpCourse3 = new Course("HIST 17C");
-    Course *tmpCourse4 = new Course("PHYS 4D");
-    input->addLast(*tmpCourse1);
-    input->addLast(*tmpCourse2);
-    input->addLast(*tmpCourse3);
-    input->addLast(*tmpCourse4);
-
-    SinglyLinkedList<University> *keyList = new SinglyLinkedList<University>();
-    HashMap<University, BST<Major>> *map = new HashMap<University, BST<Major>>();
-    Parser *parser = new Parser();
-    SinglyLinkedList<University> *universities = parser->getUniversities("data.json");
-
+void showBestMathcedMajors(Parser *parser, SinglyLinkedList<Course> *input,
+                           SinglyLinkedList<University> *universities,
+                           SinglyLinkedList<University> *keyList,
+                           HashMap<University, BST<Major>> *map) {
     for (int start = 0; start < input->getNumberOfNodes(); start++) {
         for (int i = 0; i < universities->getNumberOfNodes(); i++) {
             University u = universities->peek(i);
@@ -58,21 +46,63 @@ int main() {
         map->get(keyList->peek(i), foundMajors);
         foundMajors.breadthfirst()->display();
     }
+}
 
-    // missing courses
-    SinglyLinkedList<Course> missing;
-    Major missingCourseMajor = keyList->peek(0).getMajors()->peek(0);
-    BST<Course> *mss = missingCourseMajor.getCourses();
-    for (int i = 0; i < missingCourseMajor.getCourses()->getNumberOfItems(); i++) {
+void createDummyInput(SinglyLinkedList<Course> *input) {
+    Course *tmpCourse1 = new Course("HIST 17C");
+    Course *tmpCourse2 = new Course("HIST 17A");
+    Course *tmpCourse3 = new Course("HIST 17B");
+    Course *tmpCourse4 = new Course("PHYS 4D");
+    input->addLast(*tmpCourse1);
+    input->addLast(*tmpCourse2);
+    input->addLast(*tmpCourse3);
+    input->addLast(*tmpCourse4);
+}
+
+void showMissingCourses(SinglyLinkedList<Course> *input, BST<Course> *courses) {
+    for (int i = 0; i < courses->getNumberOfItems(); i++) {
         for (int j = 0; j < input->getNumberOfNodes(); j++) {
             Course c = input->peek(j);
-            missingCourseMajor.getCourses()->remove(c);
+            courses->remove(c);
         }
     }
-    mss->breadthfirst()->display();
+    courses->inorder()->display();
+}
 
-    delete parser;
+void writeMissingCourses(string majorName, BST<Course> *courses) {
+    ofstream out("missing_courses.txt");
+    out << "===================" << endl;
+    out << majorName << endl;
+    out << "===================" << endl;
+    Queue<Course> *result = courses->inorder();
+    while (!result->isEmpty()) {
+        Course c = result->peekFront();
+        result->dequeue();
+        out << c << endl;
+    }
+    out.close();
+}
+
+int main() {
+    SinglyLinkedList<Course> *input = new SinglyLinkedList<Course>();
+    SinglyLinkedList<University> *keyList = new SinglyLinkedList<University>();
+    HashMap<University, BST<Major>> *map = new HashMap<University, BST<Major>>();
+    Parser *parser = new Parser();
+    SinglyLinkedList<University> *universities = parser->getUniversities("data.json");
+
+    createDummyInput(input);
+    showBestMathcedMajors(parser, input, universities, keyList, map);
+
+    // missing courses
+    Major missingCourseMajor = keyList->peek(0).getMajors()->peek(0);
+    showMissingCourses(input, missingCourseMajor.getCourses());
+    writeMissingCourses(missingCourseMajor.getName(), missingCourseMajor.getCourses());
+
     input->clear();
+    keyList->clear();
+    universities->clear();
+    delete map;
+    delete parser;
     delete input;
     return 0;
 }
