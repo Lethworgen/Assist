@@ -150,6 +150,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/Course.o: model/Course.cpp.o
+
+.PHONY : model/Course.o
+
+# target to build an object file
+model/Course.cpp.o:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Course.cpp.o
+.PHONY : model/Course.cpp.o
+
+model/Course.i: model/Course.cpp.i
+
+.PHONY : model/Course.i
+
+# target to preprocess a source file
+model/Course.cpp.i:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Course.cpp.i
+.PHONY : model/Course.cpp.i
+
+model/Course.s: model/Course.cpp.s
+
+.PHONY : model/Course.s
+
+# target to generate assembly for a file
+model/Course.cpp.s:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Course.cpp.s
+.PHONY : model/Course.cpp.s
+
+model/Major.o: model/Major.cpp.o
+
+.PHONY : model/Major.o
+
+# target to build an object file
+model/Major.cpp.o:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Major.cpp.o
+.PHONY : model/Major.cpp.o
+
+model/Major.i: model/Major.cpp.i
+
+.PHONY : model/Major.i
+
+# target to preprocess a source file
+model/Major.cpp.i:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Major.cpp.i
+.PHONY : model/Major.cpp.i
+
+model/Major.s: model/Major.cpp.s
+
+.PHONY : model/Major.s
+
+# target to generate assembly for a file
+model/Major.cpp.s:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/Major.cpp.s
+.PHONY : model/Major.cpp.s
+
+model/University.o: model/University.cpp.o
+
+.PHONY : model/University.o
+
+# target to build an object file
+model/University.cpp.o:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/University.cpp.o
+.PHONY : model/University.cpp.o
+
+model/University.i: model/University.cpp.i
+
+.PHONY : model/University.i
+
+# target to preprocess a source file
+model/University.cpp.i:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/University.cpp.i
+.PHONY : model/University.cpp.i
+
+model/University.s: model/University.cpp.s
+
+.PHONY : model/University.s
+
+# target to generate assembly for a file
+model/University.cpp.s:
+	$(MAKE) -f CMakeFiles/Assist.dir/build.make CMakeFiles/Assist.dir/model/University.cpp.s
+.PHONY : model/University.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +243,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/Course.o"
+	@echo "... model/Course.i"
+	@echo "... model/Course.s"
+	@echo "... model/Major.o"
+	@echo "... model/Major.i"
+	@echo "... model/Major.s"
+	@echo "... model/University.o"
+	@echo "... model/University.i"
+	@echo "... model/University.s"
 .PHONY : help
 
 

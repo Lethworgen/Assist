@@ -80,10 +80,64 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist">
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/Parser.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BST.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/BSTNode.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashMap.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/HashNode.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/KeyHash.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Node.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/Queue.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/data_structure/SinglyLinkedList.h">
 			<Option target="Assist"/>
 		</Unit>
 		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/main.cpp">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/Course.cpp">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/Course.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/HashObject.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/Major.cpp">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/Major.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/University.cpp">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/model/University.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/rapidjson/document.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/rapidjson/stringbuffer.h">
+			<Option target="Assist"/>
+		</Unit>
+		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/rapidjson/writer.h">
 			<Option target="Assist"/>
 		</Unit>
 		<Unit filename="/Users/doyonghoon/Development/CIS22C/Assist/CMakeLists.txt">
