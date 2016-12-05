@@ -1,10 +1,22 @@
 ===================
-Physics
+Mechanical Engineering
 ===================
+CHEM 12A
+CHEM 12B
+CHEM 12C
+EWRT 1A
 PHYS 4A
 PHYS 4B
 PHYS 4C
 PHYS 4D
+BIOL 6A
+BIOL 6C
 CHEM 1A
+CHEM 1B
+CHEM 1C
 MATH 2A
 MATH 2B
+BIOL 40A
+BIOL 40B
+BIOL 40C
+EWRT 2

@@ -86,3 +86,12 @@ unsigned long University::getHashCode() const {
 bool University::operator!=(const University &b) {
     return hashcode != b.hashcode;
 }
+
+const University operator%(const University &left, const University &right) {
+    University u;
+    u.hashcode = (left.hashcode % right.hashcode);
+    u.code = left.code;
+    u.name = left.name;
+    u.majors = left.majors;
+    return u;
+}

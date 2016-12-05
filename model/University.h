@@ -56,6 +56,10 @@ public:
     bool operator==(const University &b);
 
     bool operator!=(const University &b);
+
+    friend const University
+    operator%(const University &left,
+              const University &right);
 };
 
 

@@ -5,7 +5,13 @@
 
 using namespace std;
 
-void putBestMatched(HashMap<University, BST<Major>> *map,
+struct MyKeyHash {
+    unsigned long operator()(const University &key) const {
+        return key.getHashCode() % 128;
+    }
+};
+
+void putBestMatched(HashMap<University, BST<Major>, MyKeyHash> *map,
                     SinglyLinkedList<University> *keyList,
                     University key, Major value) {
     BST<Major> majors;
@@ -22,7 +28,7 @@ void putBestMatched(HashMap<University, BST<Major>> *map,
 void showBestMathcedMajors(Parser *parser, SinglyLinkedList<Course> *input,
                            SinglyLinkedList<University> *universities,
                            SinglyLinkedList<University> *keyList,
-                           HashMap<University, BST<Major>> *map) {
+                           HashMap<University, BST<Major>, MyKeyHash> *map) {
     for (int start = 0; start < input->getNumberOfNodes(); start++) {
         for (int i = 0; i < universities->getNumberOfNodes(); i++) {
             University u = universities->peek(i);
@@ -60,7 +66,7 @@ void showBestMathcedMajors(Parser *parser, SinglyLinkedList<Course> *input,
 Major getMajor(int menu,
                SinglyLinkedList<University> *universities,
                SinglyLinkedList<University> *keyList,
-               HashMap<University, BST<Major>> *map) {
+               HashMap<University, BST<Major>, MyKeyHash> *map) {
     for (int i = 0; i < keyList->getNumberOfNodes(); i++) {
         string univName = keyList->peek(i).getName();
         BST<Major> foundMajors;
@@ -135,7 +141,7 @@ void writeMissingCourses(string majorName, BST<Course> *courses) {
 int main() {
     SinglyLinkedList<Course> *input = new SinglyLinkedList<Course>();
     SinglyLinkedList<University> *keyList = new SinglyLinkedList<University>();
-    HashMap<University, BST<Major>> *map = new HashMap<University, BST<Major>>();
+    HashMap<University, BST<Major>, MyKeyHash> *map = new HashMap<University, BST<Major>, MyKeyHash>();
     Parser *parser = new Parser();
     SinglyLinkedList<University> *universities = parser->getUniversities("data.json");
 
