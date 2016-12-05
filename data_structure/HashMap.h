@@ -38,7 +38,29 @@ public:
         }
         return false;
     }
+    
+    //How many Buckets are Filled
+    const int getFilled() const 
+    {
+        int filled = 0;
+        for(int i = 0; i < TABLE_SIZE; i++)
+        {
+            if(table[i])
+            {
+                {
+                    filled++;
+                }
+            }    
+        }
+        return filled;
+    }
 
+    //Gets the load factor of the Table
+    const double getLoadFactor const
+    {
+        return (double)getFilled()/ (double)TABLE_SIZE /2 ;
+    }
+    
     void put(const K &key, const V &value) {
         unsigned long hashValue = hashFunc(key);
         HashNode<K, V> *prev = nullptr;
