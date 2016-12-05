@@ -4,9 +4,8 @@ static const int TABLE_SIZE = 128;
 
 // Default hash function class
 template<typename K>
-struct KeyHash {
-    unsigned long operator()(const K &key) const {
-        return reinterpret_cast<unsigned long>(key) % TABLE_SIZE;
-//        return 1;
-    }
+struct MyKeyHash {
+	unsigned long operator()(const University &key) const {
+		return key.getHashCode() % 128;
+	}
 };
