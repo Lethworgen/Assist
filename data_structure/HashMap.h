@@ -42,8 +42,7 @@ public:
     //How many Buckets are Filled
     const int getNumberofElements() const 
     {
-        int filled = sizeof(table) / sizeof(table[0]);
-        return filled; //This will return the the number of filled buckets.
+        return count; //Returns the number of elements inside the hash table.
     }
 
     //Gets the load factor of the Table
@@ -75,6 +74,7 @@ public:
             // just update the value
             entry->setValue(value);
         }
+        count++;
     }
 
     void remove(const K &key) {
@@ -99,6 +99,7 @@ public:
                 prev->setNext(entry->getNext());
             }
             delete entry;
+            count--;
         }
     }
 
@@ -106,4 +107,5 @@ private:
     // hash table
     HashNode<K, V> **table;
     F hashFunc;
+    size_t count;
 };
