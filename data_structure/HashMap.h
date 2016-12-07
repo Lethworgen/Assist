@@ -40,23 +40,14 @@ public:
     }
 
     //How many Buckets are Filled
-    const int getFilled() const 
+    const int getNumberofElements() const 
     {
-        int filled = 0; // The counter
-        for(int i = 0; i < TABLE_SIZE; i++) 
-        {
-            if(table[i]) // If there is an element inside the hash table
-            {
-                {
-                    filled++; // The Counter will go up by 1.
-                }
-            }    
-        }
+        int filled = sizeof(table) / sizeof(table[0]);
         return filled; //This will return the the number of filled buckets.
     }
 
     //Gets the load factor of the Table
-    const double getLoadFactor const
+    const double getLoadFactor() const
     {
         //Converts the getFilled and TABLE_SIZE to double values. The resulting quotient will give the load factor.
         return (double)getFilled()/ (double)TABLE_SIZE; //Returns load factor
