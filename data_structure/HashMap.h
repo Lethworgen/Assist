@@ -58,7 +58,7 @@ public:
     //Gets the load factor of the Table
     const double getLoadFactor const
     {
-        //Convers the getFileld and TABLE_SIZE to double value. The resulting quotient should give the load factor.
+        //Converts the getFilled and TABLE_SIZE to double values. The resulting quotient will give the load factor.
         return (double)getFilled()/ (double)TABLE_SIZE; //Returns load factor
     }
     
