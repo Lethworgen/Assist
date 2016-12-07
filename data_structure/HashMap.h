@@ -39,6 +39,29 @@ public:
         return false;
     }
 
+    //How many Buckets are Filled
+    const int getFilled() const 
+    {
+        int filled = 0; // The counter
+        for(int i = 0; i < TABLE_SIZE; i++) 
+        {
+            if(table[i]) // If there is an element inside the hash table
+            {
+                {
+                    filled++; // The Counter will go up by 1.
+                }
+            }    
+        }
+        return filled; //This will return the the number of filled buckets.
+    }
+
+    //Gets the load factor of the Table
+    const double getLoadFactor const
+    {
+        //Convers the getFileld and TABLE_SIZE to double value. The resulting quotient should give the load factor.
+        return (double)getFilled()/ (double)TABLE_SIZE; //Returns load factor
+    }
+    
     void put(const K &key, const V &value) {
         unsigned long hashValue = hashFunc(key);
         HashNode<K, V> *prev = nullptr;
