@@ -58,7 +58,7 @@ public:
     //Gets the load factor of the Table
     const double getLoadFactor const
     {
-        return (double)getFilled()/ (double)TABLE_SIZE /2 ;
+        return (double)getFilled()/ (double)TABLE_SIZE;
     }
     
     void put(const K &key, const V &value) {
